@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "O phrasal “call up” quando usado com você"
+type = 0
+options = [ "Cai fora, que é treta", "Agradeça a deus, você arrumou um encontro.", "Finalmente vai começar a trabalhar", "Cuida que tu num tem nada a perder" ]
+correct = "Agradeça a deus, você arrumou um encontro."

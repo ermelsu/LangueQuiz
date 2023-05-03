@@ -1,8 +1,17 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" load_steps=12 format=2]
 
 [ext_resource path="res://scripts/resource/bd_quiz.gd" type="Script" id=1]
-[ext_resource path="res://scripts/resource/question/qual_come_rabo.tres" type="Resource" id=2]
+[ext_resource path="res://scripts/resource/question/6_nam.tres" type="Resource" id=2]
+[ext_resource path="res://scripts/resource/question/2_fall_in_love.tres" type="Resource" id=3]
+[ext_resource path="res://scripts/resource/question/1_sabe_de_nada.tres" type="Resource" id=4]
+[ext_resource path="res://scripts/resource/question/7_oceano.tres" type="Resource" id=5]
+[ext_resource path="res://scripts/resource/question/10_call_up.tres" type="Resource" id=6]
+[ext_resource path="res://scripts/resource/question/9_clue.tres" type="Resource" id=7]
+[ext_resource path="res://scripts/resource/question/8_i_wanna_break_free.tres" type="Resource" id=8]
+[ext_resource path="res://scripts/resource/question/5_atenção.tres" type="Resource" id=9]
+[ext_resource path="res://scripts/resource/question/4_tirar_onda.tres" type="Resource" id=10]
+[ext_resource path="res://scripts/resource/question/3_blue_sad.tres" type="Resource" id=11]
 
 [resource]
 script = ExtResource( 1 )
-bd = [ ExtResource( 2 ) ]
+bd = [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 6 ) ]

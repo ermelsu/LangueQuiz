@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "'I have no clue' é uma expressão bastante utilizada que significa:"
+type = 0
+options = [ "Eu nunca ouvi falar", "Deixa pra lá", "Eu não faço a menor ideia", "Tô nem aí" ]
+correct = "Eu não faço a menor ideia"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "The best expression to refer “crush” isThe best expression to refer “crush” is"
+type = 0
+options = [ "Fall apart", "Fall in love", "Fall out", "Fall down" ]
+correct = "Fall in love"

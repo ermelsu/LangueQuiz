@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "The phrase “because of humans we are losing the oceans” pode ser compreendida como"
+type = 0
+options = [ "Por mode os humanos, nós temos oceanos", "Os oceanos sobrevivem por causa do povo", "O povo tá lascando com os oceanos", "A humanidade faz é cuidar dos oceanos" ]
+correct = "O povo tá lascando com os oceanos"

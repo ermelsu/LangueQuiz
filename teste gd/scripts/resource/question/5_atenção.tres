@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_question.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+question_info = "The verb “watch out” can refer to"
+type = 0
+options = [ "Tá nem aí", "Cuidar de sua vida", "Prestar atenção", "Fazer a egípcia" ]
+correct = "Fazer a egípcia"

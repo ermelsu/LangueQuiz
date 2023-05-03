@@ -1,0 +1,12 @@
+Godot Engine v3.3.1.stable.official - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 960/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+**ERROR**: (Node not found: "question_info/image_holder/question_image" (relative to "/root/level_game").)
+   At: scene/main/node.cpp:1371:get_node() - Condition "!node" is true. Returned: __null
+**ERROR**: (Node not found: "question_info/image_holder/question_video" (relative to "/root/level_game").)
+   At: scene/main/node.cpp:1371:get_node() - Condition "!node" is true. Returned: __null
+**ERROR**: (Node not found: "question_info/image_holder/question_audio" (relative to "/root/level_game").)
+   At: scene/main/node.cpp:1371:get_node() - Condition "!node" is true. Returned: __null
+**ERROR**: (Node not found: "question_info/image_holder" (relative to "/root/level_game").)
+   At: scene/main/node.cpp:1371:get_node() - Condition "!node" is true. Returned: __null
