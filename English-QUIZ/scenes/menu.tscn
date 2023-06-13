@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/menu/menu.gd" type="Script" id=1]
-[ext_resource path="res://PROJETO QUIZ logo.png" type="Texture" id=2]
+[ext_resource path="res://imagens/Ativo 2@4x-8313.png" type="Texture" id=2]
 [ext_resource path="res://fonts/buttons40.tres" type="DynamicFont" id=3]
+[ext_resource path="res://imagens/Logo.png" type="Texture" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0823529, 0.00784314, 0.211765, 1 )
@@ -19,13 +20,10 @@ margin_top = -2.1189
 margin_right = 1275.76
 margin_bottom = 817.881
 custom_styles/panel = SubResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
-[node name="englishQuiz" type="Sprite" parent="."]
-position = Vector2( 615.846, 317.779 )
-scale = Vector2( 0.237988, 0.237988 )
+[node name="Ativo24x-8313" type="Sprite" parent="."]
+position = Vector2( 1210, 794 )
+scale = Vector2( 0.544603, 0.576296 )
 texture = ExtResource( 2 )
 
 [node name="continuar" type="Button" parent="."]
@@ -36,6 +34,15 @@ margin_right = 246.827
 margin_bottom = 495.164
 custom_fonts/font = ExtResource( 3 )
 text = "CONTINUAR"
+flat = true
+
+[node name="sair" type="Button" parent="."]
+margin_left = 702.0
+margin_top = 502.0
+margin_right = 895.0
+margin_bottom = 626.0
+custom_fonts/font = ExtResource( 3 )
+text = "SAIR"
 flat = true
 
 [node name="continuar2" type="Button" parent="."]
@@ -50,26 +57,22 @@ __meta__ = {
 }
 
 [node name="novoJogo" type="Button" parent="."]
-margin_left = 280.112
-margin_top = 500.888
-margin_right = 521.112
-margin_bottom = 624.888
+margin_left = 360.0
+margin_top = 503.0
+margin_right = 601.0
+margin_bottom = 627.0
 custom_fonts/font = ExtResource( 3 )
 text = "NOVO JOGO"
 flat = true
 
-[node name="sair" type="Button" parent="."]
-margin_left = 759.796
-margin_top = 497.53
-margin_right = 952.796
-margin_bottom = 621.53
-custom_fonts/font = ExtResource( 3 )
-text = "SAIR"
-flat = true
+[node name="englishQuiz" type="Sprite" parent="."]
+position = Vector2( 604, 323 )
+scale = Vector2( 0.343166, 0.324672 )
+texture = ExtResource( 4 )
 
 [connection signal="item_rect_changed" from="back" to="." method="_on_back_item_rect_changed"]
 [connection signal="pressed" from="continuar" to="." method="_on_continuar_pressed"]
 [connection signal="visibility_changed" from="continuar" to="." method="_on_continuar_visibility_changed"]
+[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
 [connection signal="pressed" from="continuar2" to="." method="_on_redirect_liguee"]
 [connection signal="pressed" from="novoJogo" to="." method="_on_novoJogo_pressed"]
-[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
