@@ -1,0 +1,477 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://scripts/quizWS/quizWS.gd" type="Script" id=1]
+[ext_resource path="res://Cores/PanelPerguntaColor.tres" type="StyleBox" id=2]
+[ext_resource path="res://fonts/Righteous-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://fonts/buttons40.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Cores/PanelOpcaoColor.tres" type="StyleBox" id=5]
+[ext_resource path="res://Cores/HoverButtonABCD.tres" type="StyleBox" id=6]
+[ext_resource path="res://Cores/PressedButtonABCD.tres" type="StyleBox" id=7]
+[ext_resource path="res://Cores/ButtonABCD.tres" type="StyleBox" id=8]
+[ext_resource path="res://scenes/backAnswer.tscn" type="PackedScene" id=9]
+[ext_resource path="res://classe/questions.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/timer.tscn" type="PackedScene" id=11]
+[ext_resource path="res://correct.wav" type="AudioStream" id=12]
+[ext_resource path="res://wrong.wav" type="AudioStream" id=13]
+[ext_resource path="res://music/background.ogg" type="AudioStream" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.509804, 0.0862745, 0.976471, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "backFOI"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 169.862, 326.442 ), Vector2( 620, 470 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.01, 0.01 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "backVEM"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.1, 0.1 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 574.292, 487.759 ), Vector2( 169.862, 326.442 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.321569, 0.105882, 0.556863, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.188235, 0.0431373, 0.34902, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.388235, 0.12549, 0.67451, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.196078, 0.160784, 0.160784, 1 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.176471, 0.0901961, 0.0901961, 1 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.192157, 0.172549, 0.172549, 1 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 20
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=14]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("backAnswer:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.01, 0.01 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("backAnswer:rect_position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 620, 470 ), Vector2( 167.94, 324.945 ) ]
+}
+
+[node name="quizWS" type="CanvasLayer"]
+script = ExtResource( 1 )
+perguntaPath = NodePath("pergunta/pergunta")
+lastScorePath = NodePath("score/last/lastScore")
+bestScorePath = NodePath("score/best/bestAcore")
+buttonAPath = NodePath("botoes/buttonA")
+buttonBPath = NodePath("botoes/buttonB")
+buttonCPath = NodePath("botoes/buttonC")
+buttonDPath = NodePath("botoes/buttonD")
+questionsPath = NodePath("questions")
+answerPath = NodePath("backAnswer/answer")
+
+[node name="pergunta" type="Panel" parent="."]
+margin_right = 1281.0
+margin_bottom = 212.0
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="pergunta" type="Label" parent="pergunta"]
+margin_left = 35.0
+margin_top = 57.0
+margin_right = 1246.0
+margin_bottom = 201.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.968627, 0.984314, 0.988235, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.968627, 0.956863, 0.956863, 1 )
+text = "As perguntas são feitas aqui"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="opaQuestao" type="Label" parent="pergunta"]
+margin_right = 126.0
+margin_bottom = 53.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.0196078, 0.980392, 0.694118, 1 )
+custom_colors/font_outline_modulate = Color( 0.0196078, 0.980392, 0.694118, 1 )
+custom_colors/font_color_shadow = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+text = "0/50"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="score" type="Panel" parent="."]
+modulate = Color( 0.941176, 0.941176, 0.941176, 1 )
+self_modulate = Color( 0.992188, 0.992188, 0.992188, 1 )
+light_mask = 0
+margin_top = 213.0
+margin_right = 1283.0
+margin_bottom = 283.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="last" type="Label" parent="score"]
+margin_left = 53.0
+margin_right = 471.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 4 )
+text = "PONTUACÃO ATUAL:"
+align = 2
+valign = 1
+
+[node name="lastScore" type="Label" parent="score/last"]
+margin_left = 431.0
+margin_top = 2.0
+margin_right = 557.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 4 )
+text = "12345"
+valign = 1
+
+[node name="best" type="Label" parent="score"]
+margin_left = 604.0
+margin_right = 1047.0
+margin_bottom = 72.0
+custom_fonts/font = ExtResource( 4 )
+text = "MELHOR PONTUACÃO:"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bestAcore" type="Label" parent="score/best"]
+margin_left = 456.0
+margin_top = 1.0
+margin_right = 582.0
+margin_bottom = 71.0
+custom_fonts/font = ExtResource( 4 )
+text = "12345"
+valign = 1
+
+[node name="botoes" type="Panel" parent="."]
+modulate = Color( 0.969355, 0.984375, 0.965149, 1 )
+margin_top = 283.0
+margin_right = 1280.0
+margin_bottom = 719.0
+custom_styles/panel = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="buttonA" type="Button" parent="botoes"]
+modulate = Color( 1, 0.980469, 0.980469, 1 )
+margin_left = 170.0
+margin_top = 43.0
+margin_right = 582.0
+margin_bottom = 195.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 8 )
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color_disabled = Color( 0.96875, 0.946045, 0.946045, 1 )
+custom_colors/font_color = Color( 0.96875, 0.889282, 0.889282, 1 )
+custom_colors/font_color_hover = Color( 0.992188, 0.992188, 0.992188, 1 )
+custom_colors/font_color_pressed = Color( 0.984375, 0.961304, 0.961304, 1 )
+text = "A"
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="aButton" type="Label" parent="botoes/buttonA"]
+margin_right = 412.0
+margin_bottom = 152.0
+rect_clip_content = true
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0.980392, 0.980392, 0.980392, 1 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="buttonB" type="Button" parent="botoes"]
+modulate = Color( 0.976562, 0.957489, 0.957489, 1 )
+margin_left = 665.0
+margin_top = 43.0
+margin_right = 1077.0
+margin_bottom = 195.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 8 )
+custom_fonts/font = ExtResource( 4 )
+text = "B"
+clip_text = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="bButton" type="Label" parent="botoes/buttonB"]
+margin_right = 412.0
+margin_bottom = 152.0
+rect_clip_content = true
+custom_fonts/font = ExtResource( 4 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="buttonC" type="Button" parent="botoes"]
+modulate = Color( 0.980469, 0.961319, 0.961319, 1 )
+margin_left = 170.0
+margin_top = 241.0
+margin_right = 582.0
+margin_bottom = 393.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 8 )
+custom_fonts/font = ExtResource( 4 )
+text = "C"
+clip_text = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="cButton" type="Label" parent="botoes/buttonC"]
+margin_right = 412.0
+margin_bottom = 152.0
+rect_clip_content = true
+custom_fonts/font = ExtResource( 4 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="buttonD" type="Button" parent="botoes"]
+modulate = Color( 0.988281, 0.972839, 0.972839, 1 )
+margin_left = 665.0
+margin_top = 241.0
+margin_right = 1077.0
+margin_bottom = 393.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/normal = ExtResource( 8 )
+custom_fonts/font = ExtResource( 4 )
+text = "D"
+clip_text = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="dButton" type="Label" parent="botoes/buttonD"]
+margin_right = 412.0
+margin_bottom = 152.0
+rect_clip_content = true
+custom_fonts/font = ExtResource( 4 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+
+[node name="backAnswer" parent="." instance=ExtResource( 9 )]
+visible = false
+modulate = Color( 1, 1, 1, 1 )
+margin_left = 169.862
+margin_top = 326.442
+margin_right = 1076.86
+margin_bottom = 675.443
+custom_styles/panel = SubResource( 3 )
+
+[node name="answer" type="Label" parent="backAnswer"]
+margin_right = 903.0
+margin_bottom = 278.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+text = "ESTÁ CERTO! Por isso e por aquilo memo"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="anime" type="AnimationPlayer" parent="backAnswer"]
+anims/backFOI = SubResource( 5 )
+anims/backVEM = SubResource( 6 )
+
+[node name="continuar" type="Button" parent="backAnswer"]
+modulate = Color( 0.986374, 0.98056, 0.992188, 1 )
+margin_left = 244.594
+margin_top = 245.205
+margin_right = 645.594
+margin_bottom = 333.205
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = ExtResource( 4 )
+text = "CONTINUAR"
+
+[node name="reiniciar" type="Button" parent="backAnswer"]
+visible = false
+modulate = Color( 0.986374, 0.98056, 0.992188, 1 )
+margin_left = 244.594
+margin_top = 245.205
+margin_right = 645.594
+margin_bottom = 333.205
+custom_styles/normal = SubResource( 9 )
+custom_fonts/font = ExtResource( 4 )
+text = "REINICIAR"
+
+[node name="questions" parent="." instance=ExtResource( 10 )]
+
+[node name="timer" parent="." instance=ExtResource( 11 )]
+margin_left = 585.0
+margin_top = 7.0
+margin_right = 1825.0
+margin_bottom = 186.0
+custom_colors/default_color = Color( 0.0196078, 0.980392, 0.694118, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+text = "0:0:0"
+
+[node name="correct" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -18.0
+
+[node name="wrong" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+volume_db = -15.0
+
+[node name="background" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -19.158
+autoplay = true
+
+[node name="voltar" type="Button" parent="."]
+anchor_left = 0.08
+anchor_right = 0.09
+anchor_bottom = 0.04
+margin_left = 1056.6
+margin_top = 8.0
+margin_right = 1157.8
+margin_bottom = 12.2
+custom_styles/hover = SubResource( 10 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+custom_fonts/font = SubResource( 13 )
+text = "VOLTAR"
+
+[node name="surgiuVei" type="AnimationPlayer" parent="."]
+anims/vemMan = SubResource( 14 )
+
+[node name="TextEdit" type="TextEdit" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+text = "cor card 304f44
+cor botoes 277f60"
+
+[connection signal="pressed" from="botoes/buttonA" to="." method="_on_buttonA_pressed"]
+[connection signal="pressed" from="botoes/buttonB" to="." method="_on_buttonB_pressed"]
+[connection signal="pressed" from="botoes/buttonC" to="." method="_on_buttonC_pressed"]
+[connection signal="pressed" from="botoes/buttonD" to="." method="_on_buttonD_pressed"]
+[connection signal="pressed" from="backAnswer/continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="backAnswer/reiniciar" to="." method="_on_reiniciar_pressed"]
+[connection signal="acabouVei" from="timer" to="." method="_on_timer_acabouVei"]
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]

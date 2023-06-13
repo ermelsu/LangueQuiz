@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://fonts/buttons40.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/timer.gd" type="Script" id=2]
+
+[node name="timer" type="RichTextLabel"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1260.0
+margin_bottom = 700.0
+custom_fonts/normal_font = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="tms" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[connection signal="timeout" from="tms" to="." method="_on_tms_timeout"]

@@ -1,0 +1,654 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/questions/questions.gd" type="Script" id=1]
+
+[node name="questions" type="Node"]
+
+[node name="question" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE BEST EXPRESSION TO REFER “CRUSH” IS"
+opcaoA = "FALL APART"
+opcaoB = "FALL IN LOVE"
+opcaoC = "FALL OUT"
+opcaoD = "FALL DOWN"
+trueB = true
+
+[node name="question2" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O VERBO WORK VAI SIGNIFICAR “SE EXERCITAR” QUANDO FOR"
+opcaoA = "WORK OUT"
+opcaoB = "WORK OFF"
+opcaoC = "WORK ON"
+opcaoD = "WORK IN"
+trueA = true
+explicaFALSE = "ERRADO!"
+
+[node name="question3" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A PALAVRA “BLUE” ALÉM DE AZUL, PODE SIGNIFICAR"
+opcaoA = "FELIZ QUE NEM CRIANÇA"
+opcaoB = "MAIS LISO QUE SABÃO"
+opcaoC = "TRISTE QUE NEM O CACHORRÃO DO BREGA"
+opcaoD = "AVOROÇADO"
+trueC = true
+
+[node name="question4" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = " A PALAVRA “BLUE” PODE SER SUBSTITUIDA POR"
+opcaoA = "HAPPY"
+opcaoB = "EXCITED"
+opcaoC = "AMAZING"
+opcaoD = "SAD"
+trueD = true
+
+[node name="question5" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE WORD “PRANKING” IS USED TO REFER"
+opcaoA = "TIRAR ONDA COM A CARA “DUZOTO”"
+opcaoB = "FICAR FEITO BESTA"
+opcaoC = "CUDAR DA VIDA ALHEIA"
+opcaoD = "CHUTAR O BALDE"
+trueA = true
+explicaFALSE = "ERRADO!"
+
+[node name="question6" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = " THE VERB “OBSERVE” CAN BE REPLACED BY"
+opcaoA = "WATCH"
+opcaoB = "RUN"
+opcaoC = "WORK"
+opcaoD = "BUY"
+trueA = true
+
+[node name="question7" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE VERB “WATCH OUT” CAN REFER TO"
+opcaoA = "TÁ NEM AÍ"
+opcaoB = "CUIDAR DE SUA VIDA"
+opcaoC = "PRESTAR ATENÇÃO"
+opcaoD = "FAZER A EGÍPCIA"
+trueC = true
+
+[node name="question8" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A EXPRESSÃO “I COULDN’T CARELESS” PODE SER O MESMO"
+opcaoA = "QUEM DISSE QUE LIGO?"
+opcaoB = "E TÁ É FRESCANDO É?"
+opcaoC = "E É O SUPER HOME?"
+opcaoD = "TÁ DOIDO?"
+trueA = true
+
+[node name="question9" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE WORD “DON’T” IS USED LIKE"
+opcaoA = "É DESSE JEITO"
+opcaoB = "NAM"
+opcaoC = "ÉEEEE COM CERTEZA"
+opcaoD = "ABSOLUTAMENTE"
+trueB = true
+
+[node name="question10" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE PHRASE “BECAUSE OF HUMANS WE ARE LOSING THE OCEANS” PODE SER COMPREENDIDA COMO"
+opcaoA = "POR MODE OS HUMANOS, NÓS TEMOS OCEANOS"
+opcaoB = "OS OCEANOS SOBREVIVEM POR CAUSA DO POVO"
+opcaoC = "O POVO TÁ LASCANDO COM OS OCEANOS"
+opcaoD = "A HUMANIDADE FAZ É CUIDAR DOS OCEANOS"
+trueC = true
+
+[node name="question11" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE EXPRESSION “DUE TO” CAN BE REPLACED BY"
+opcaoA = "BECAUSE OF"
+opcaoB = "BECOME TO"
+opcaoC = "BEGIN TO"
+opcaoD = "BEFORE TO"
+trueA = true
+
+[node name="question12" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "SE VOCÊ USAR A FRASE “I WANNA BREAK FREE” TENDO UMA DR’, ENTÃO VOCÊ DIZ QUE:"
+opcaoA = "ESSE NAMORO TÁ CARO"
+opcaoB = "PRECISO DE UM TEMPO"
+opcaoC = "A FILA ANDOU"
+opcaoD = "BORA FAZER AS PAZES"
+trueC = true
+
+[node name="question13" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "SE EM UMA RELACIONAMENTO VOCÊ USAR A EXPRESSÃO “BREAK OFF” ENTÃO VOCÊ QUER DIZER QUE"
+opcaoA = "QUERO MAIS UMA CHANCE"
+opcaoB = "NÃO VOU TE FAZER SOFRER"
+opcaoC = "DESCULPAS"
+opcaoD = "BORA DAR UM TEMPO"
+trueD = true
+
+[node name="question14" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE EXPRESSION “RUN AWAY” REFERS TO"
+opcaoA = "CORRER RÁPIDO"
+opcaoB = "ESTABELECER METAS"
+opcaoC = "PEGAR O BECO"
+opcaoD = "PAGAR DE OTÁRIO"
+trueC = true
+
+[node name="question15" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O PHRASAL VERB 'LOOK AFTER' SE ADEQUA EM QUAL DESSAS SITUAÇÕES?"
+opcaoA = "PRA QUE FAZER ISSO HOJE SE VOCÊ PODE DEIXAR PARA AMANHÃ?"
+opcaoB = "PROCURAR ATÉ ACHAR"
+opcaoC = "CUIDAR DE ALGO OU DE ALGUÉM DANDO UM(A) DE BABÁ"
+opcaoD = "PERSEGUIR ALGUÉM"
+trueC = true
+
+[node name="question16" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "QUAL DESSES PHRASAL VERBS PODE SER TRADUZIDO COMO 'DESISTIR'?"
+opcaoA = "GIVE IN"
+opcaoB = "GIVE UP"
+opcaoC = "GIVE AWAY"
+opcaoD = "TAKE OVER"
+trueB = true
+explicaFALSE = "ERRADO!"
+
+[node name="question17" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'SIGA EM FRENTE' É O MESMO QUE: "
+opcaoA = "GO ON"
+opcaoB = "GO OUT"
+opcaoC = "GO THROUGH"
+opcaoD = "GO OVER"
+trueA = true
+
+[node name="question18" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'I HAVE NO CLUE' É UMA EXPRESSÃO BASTANTE UTILIZADA QUE SIGNIFICA:"
+opcaoA = "EU NUNCA OUVI FALAR"
+opcaoB = "DEIXA PRA LÁ"
+opcaoC = "EU NÃO FAÇO A MENOR IDEIA"
+opcaoD = "TÔ NEM AÍ"
+trueC = true
+
+[node name="question19" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A EXPRESSÃO 'CROSS YOUR HEART AND HOPE TO DIE' PODE SER SUBSTITUIDA POR:"
+opcaoA = "COM O CORAÇÃO NA MÃO"
+opcaoB = "JURA POR DEUS"
+opcaoC = "CARREGAR SUA CRUZ"
+opcaoD = "DESEJAR MORRER"
+trueB = true
+
+[node name="question20" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE EXPRESSION “ YOU KNOW NOTHING” IS THE SAME "
+opcaoA = "SÓ QUER SER A BALA"
+opcaoB = "SABE DE NADA, INOCENTE"
+opcaoC = "O SABIDÃO"
+opcaoD = "FINGE DE BOM"
+trueB = true
+explicaFALSE = "ERRADO!"
+
+[node name="question21" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A PALAVRA “CALL” PODE SER USADA COMO"
+opcaoA = "CHAMAR PRA FAZER ALGO"
+opcaoB = "CHAMAR NO PROBLEMINHA"
+opcaoC = "TÁ POR FORA"
+opcaoD = "TÔ LIGADO NÃO"
+trueB = true
+
+[node name="question22" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O PHRASAL “CALL UP” QUANDO USADO COM VOCÊ"
+opcaoA = "CAI FORA, QUE É TRETA"
+opcaoB = "AGRADEÇA A DEUS, VOCÊ ARRUMOU UM ENCONTRO"
+opcaoC = "FILNAMENTE VAI COMEÇAR ATRABALHAR"
+opcaoD = "CUIDA QUE TU NUM TEM NADA A PERDER"
+trueB = true
+
+[node name="question23" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A FRASE QUE RETRATA A EXPRESSÃO ‘LET DOWN’ É"
+opcaoA = "VIAJAR ENCHE A ALMA"
+opcaoB = "COMECE DE ONDE ESTÁ"
+opcaoC = "AS VEZES É PRECISO UMA DECEPÇÃO"
+opcaoD = "FAÇA MAIS DO QUE EXISTIR"
+trueC = true
+
+[node name="question24" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "‘LET DOWN” MEANS"
+opcaoA = "HAPPINESS"
+opcaoB = "EMBARECEMENT"
+opcaoC = "PROCESS"
+opcaoD = "DISAPPOINTMENT"
+trueD = true
+
+[node name="question25" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "THE BEST INTERPRETATION FOR ‘SOMETIMES YOU NEED SOMEONE TO SHOW YOU THE LIGHT’"
+opcaoA = "NEM SEMPRE AS PESSOAS TE ENTENDERÃO"
+opcaoB = "AS VEZES É VOCÊ QUE DEVE MUDAR"
+opcaoC = "A LUZ NUNCA ESTÁ NO FIM DO TÚNEL, MAS EM VOCÊ."
+opcaoD = "DE VEZ EM QUANDO É NECESSÁRIO ALGUÉM PRA TE GUIAR.
+
+"
+trueD = true
+
+[node name="question26" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "SE VOCÊ USAR A EXPRESSÃO ‘RUSH INTO’ ENTÃO VOCÊ QUER DIZER"
+opcaoA = "AFOLOSAR"
+opcaoB = "SE AMOSTRAR"
+opcaoC = "ARRUDIAR"
+opcaoD = "SE AVEXAR"
+trueD = true
+
+[node name="question27" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "SE VOCÊ MARCOU UM ENCONTRO, A PESSOAS SE ATRASA E VOCÊ LIGA PRA PESSOA DIZENDO, “HURRY UP, YOU BLESSED” ENTÃO VOCÊ"
+opcaoA = "VAI DEIXÁ-LO PLANTADO TAMBÉM, SEU ABESTADO"
+opcaoB = "MANDOU SE LASCAR, AMALDIÇOADO"
+opcaoC = "JÁ PERDEU O JUÍZO, INFELIZ"
+opcaoD = "MANDOU SE AVEXAR, ABENÇOADO."
+trueD = true
+
+[node name="question28" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "SE VOCÊ QUISER DIZER EM INGLÊS, SÓ PRA TREINAR COM A PESSOAS QUE VOCÊ NÃO GOTA “NÃO ME ENCHE O SACO” ENTÃO VOCÊ USA"
+opcaoA = "DON’T BOTHER ME"
+opcaoB = "WE DON’T ASK THAT"
+opcaoC = "DON´T HOLD ME"
+opcaoD = "LOOK NO FUTHER FOR HER."
+trueA = true
+
+[node name="question29" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "SE NUMA DR, VOCÊ COME ÇA COM A FRASE “BECAUSE I...” É PORQUE"
+opcaoA = "VOCÊ SE LASCOU E TÁ SE EXPLICANDO"
+opcaoB = "VOCÊ NÃO DÁ A MÍNIMA"
+opcaoC = "VOCÊ SE ESQUECEU DE ALGO"
+opcaoD = "VOCÊ SE LASCOU E NÃO TEM EXPLICAÇÃO"
+trueA = true
+
+[node name="question30" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "IF YOU RECEIVE THE PHRASE “LET’S GET A DATE” ON INSTAGRAM DIRECT MESSAGE, SO"
+opcaoA = "VIBRE, MEU AMIGO. VOCÊ DESENCALHOU!"
+opcaoB = "CORRA QUE ISSO NÃO É DE DEUS"
+opcaoC = "É SÓ MAIS UM DESILUSÃO AMOROSA"
+opcaoD = "ATÉ QUE ENFIM VOCÊ RECEBEU UMA MESSAGEM
+
+"
+trueA = true
+
+[node name="question31" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A MELHOR FORMA DE INTERPRETAR ‘THIS IS BREAKING ME DOWN, BUT I’M OK”"
+opcaoA = "MORRI, MAS PASSO BEM"
+opcaoB = "ISSO ME LASCA, MAS É MASSA"
+opcaoC = "DEUS ME LIVRE, MAS QUEM ME DERA"
+opcaoD = "SÓ ASSIM PRA EU APRENDER"
+trueA = true
+
+[node name="question32" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "QUAL OPÇÃO TRADUZ A EXPRESSÃO \"PELO AMOR DE DEUS\"?"
+opcaoA = "SE FAR, SO GOOD"
+opcaoB = "FOR GOODNESS SAKE!"
+opcaoC = "SAVED BY THE BELL"
+opcaoD = "BITE YOUR TONGUE!"
+trueB = true
+
+[node name="question33" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "NEVER HEARD OF, SIGNIFICA?"
+opcaoA = "NUNCA OUVI FALAR"
+opcaoB = "INFELIZ DA COSTA OCA"
+opcaoC = "NUNCA SOUBE O QUE FAZER"
+opcaoD = "REBOLAR NO MATO "
+trueA = true
+
+[node name="question34" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A FRASE \"BITE YOU TONGUE\", REFERE-SE À:"
+opcaoA = "PAREDES TÊM OUVIDOS"
+opcaoB = "CUSTAR OS OLHOS DA CARA"
+opcaoC = "VIRA ESSA BOCA PRA LÁ!"
+opcaoD = "SALVO PELO GONGO
+
+"
+trueC = true
+
+[node name="question35" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O TERMO \"ATÉ PARECE\", É O MESMO QUE?"
+opcaoA = "I'M HUNGRY"
+opcaoB = "AS IF"
+opcaoC = "I HEAR YOU"
+opcaoD = "SHUT UP!"
+trueB = true
+
+[node name="question36" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A EXPRESSÃO \"AS LOST AS A NUN ON A HONEYMOON\", PODE SER TRADUZIDA COMO:"
+opcaoA = "UMA MÃO LAVA A OUTRA"
+opcaoB = "ARRUMAR SARNA PARA SE COÇAR"
+opcaoC = "MAIS PERDIDO QUE CEGO EM TIROTEIO"
+opcaoD = "TROCAR OS PÉS PELAS MÃOS"
+trueC = true
+
+[node name="question37" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "PARA CONVIDAR ALGUÉM, USAMOS?"
+opcaoA = "ASK OUT"
+opcaoB = "ADD UP"
+opcaoC = "CATCH UP"
+opcaoD = "DROP BY"
+trueA = true
+
+[node name="question38" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "FIND OUT, POSSUI O VALOR DE:"
+opcaoA = "ENCONTRAR"
+opcaoB = "PROCURAR"
+opcaoC = "DESCOBRIR"
+opcaoD = "TERMINAR"
+trueC = true
+
+[node name="question39" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "PARA \"RETIRAR O QUE DISSE\", USA-SE O TERMO:"
+opcaoA = "TAKE OVER"
+opcaoB = "TAKE BACK"
+opcaoC = "PUT OUT"
+opcaoD = "TAKE DOWN"
+trueB = true
+
+[node name="question40" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "SABER, É:"
+opcaoA = "TAKE "
+opcaoB = "KNOW"
+opcaoC = "SEE"
+opcaoD = "COME"
+trueB = true
+
+[node name="question41" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A EXPRESSÃO “ TÔ LIGADO” PODE SER"
+opcaoA = "I GIVE A SHIT"
+opcaoB = "I GET IT"
+opcaoC = "I WILL"
+opcaoD = "I LIKE IT"
+trueB = true
+
+[node name="question42" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "QUAL TERMO SE REFERE À PODER?"
+opcaoA = "SHOULD"
+opcaoB = "TRY"
+opcaoC = "NEED"
+opcaoD = "MAY"
+trueD = true
+
+[node name="question43" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "QUAL PHRASAL VERB, ADEQUA-SE MELHOR A TRADUÇÃO \"PÔR PARA FORA\"?"
+opcaoA = "TURN UP"
+opcaoB = "TAKE OVER"
+opcaoC = "PUT OUT"
+opcaoD = "LOOK AFTER"
+trueC = true
+
+[node name="question44" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "TRANSFORMAR, É O MESMO QUE?"
+opcaoA = "MAKE INTO"
+opcaoB = "MAKE OFF"
+opcaoC = "MAKE UP"
+opcaoD = "MAKE OUT"
+trueA = true
+
+[node name="question45" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O TERMO \"ESCAPAR FEDENDO\", É O MESMO QUE:"
+opcaoA = "LOOK UP TO"
+opcaoB = "GIVE AWAY"
+opcaoC = "GET AWAY WITH"
+opcaoD = "TURN OVER"
+trueC = true
+
+[node name="question46" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "WHEN PIGS FLY, POSSUI SENTIDO REAL DE:"
+opcaoA = "NO DIA DE SÃO NUNCA "
+opcaoB = "NÃO TEM MAIS JEITO"
+opcaoC = "OS OLHOS DA CARA"
+opcaoD = "FALAR PELOS COTOVELOS"
+trueA = true
+
+[node name="question47" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "DUSK TILL DAWN, PODE SER INTERPRETADO COMO:"
+opcaoA = "ESTRESSADO"
+opcaoB = "DO ANOITECER AO AMANHECER"
+opcaoC = "DESTINADO A SER"
+opcaoD = "GAROTAS COMO VOCÊ"
+trueB = true
+
+[node name="question48" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A TRADUÇÃO DE \"DIGA QUE VOCÊ NÃO VAI EMBORA\", PODE SER?"
+opcaoA = "LIKE I'M GONNA LOSE YOU"
+opcaoB = "SAY YOU WON'T LET GO"
+opcaoC = "LOVE ME OR LEAVE ME"
+opcaoD = "TOO GOOD AT GOODBYES"
+trueB = true
+
+[node name="question49" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A GÍRIA INGLESA \"LAUGHING OUT LOUD (LOL)\", EM PORTUGUÊS SIGNIFICA ALGO COMO:"
+opcaoA = "EXPLODIU SUA CABEÇA"
+opcaoB = "ESSA É SUA GALERA"
+opcaoC = "RINDO MUITO ALTO"
+opcaoD = "TÔ MORTA!"
+trueC = true
+
+[node name="question50" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O TERMO INTEREST, DEPENDENDO DO CONTEXTO, PODE SIGNIFICAR 'INTERESSE' E?"
+opcaoA = "CONSELHO"
+opcaoB = "ABRIGAR"
+opcaoC = "LUCRO"
+opcaoD = "JUROS"
+trueD = true
+
+[node name="question51" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "QUAL ALTERNATIVA INFORMA, A EXPRESSÃO E SEU CONCEITO, INCORRETAMENTE?"
+opcaoA = "DOWNFALL: ALGO GENIAL"
+opcaoB = "CRUSH: TER UMA \"QUEDA\" POR ALGUÉM "
+opcaoC = "GIDDY-UP: MANDAR VER!"
+opcaoD = "FANCY: SOFISTICADO"
+trueA = true
+
+[node name="question52" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O QUE SIGNIFICA \"UPSIDE DOWN\"?"
+opcaoA = "DO LADO DE LÁ"
+opcaoB = "DE CABEÇA PARA BAIXO "
+opcaoC = "ABAIXO"
+opcaoD = "TRISTE"
+trueB = true
+
+[node name="question53" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'CLOSE' ALÉM DE SER TRADUZIDO COMO \"FECHAR\" PODE SIGNIFICAR TAMBÉM:"
+opcaoA = "DEPOIS"
+opcaoB = "ANTES"
+opcaoC = "PERTO"
+opcaoD = "LONGE"
+trueC = true
+
+[node name="question54" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "\"ATÉ ONDE EU SEI\" EM INGLÊS SIGNIFICA:"
+opcaoA = "AS IF"
+opcaoB = "AS FAR AS I KNOW"
+opcaoC = "SO FAR SO GOOD"
+opcaoD = "YOU KNOW"
+trueB = true
+
+[node name="question55" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A TRADUÇÃO DE 'CARTA' É:"
+opcaoA = "CARTOON"
+opcaoB = "LETTER"
+opcaoC = "LITTLE"
+opcaoD = "CAN"
+trueB = true
+
+[node name="question56" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'THROWING SHADE' É O MESMO QUE:"
+opcaoA = "MANDAR CATAR COQUINHO"
+opcaoB = "CHAMAR PRO ROLÊ"
+opcaoC = "JOGAR UM OLHAR DESAPROVADOR"
+opcaoD = "SAIR DE FININHO"
+trueC = true
+
+[node name="question57" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'TO BE OUT OF THE LOOP' SIGNIFICA:"
+opcaoA = "ESTAR VIAJANDO NA MAIONESE"
+opcaoB = "DEUS ME LIVRE, MAS QUEM ME DERA"
+opcaoC = "QUE ALGO FOI POR ÁGUA ABAIXO"
+opcaoD = "LACRAÇÃO"
+trueA = true
+
+[node name="question58" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "\"MY SQUAD\" É UMA GÍRIA INGLESA QUE CORRESPONDE A: "
+opcaoA = "MINHA FAMÍLIA"
+opcaoB = "MEUS PARENTES"
+opcaoC = "MEU BONDE"
+opcaoD = "MINHA VIZINHANÇA"
+trueC = true
+
+[node name="question59" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "O TERMO 'ARRASAR' EM INGLÊS É:"
+opcaoA = "QUEEN"
+opcaoB = "ON FLEEK"
+opcaoC = "LOOKS BEAUTIFUL"
+opcaoD = "AMAZING"
+trueB = true
+
+[node name="question60" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "QUE PALAVRA É USADA PARA EXPRESSAR QUE ALGUÉM FICOU OFENDIDO COM ALGUM INSULTO?"
+opcaoA = "ROAST"
+opcaoB = "FREAK"
+opcaoC = "INSANE"
+opcaoD = "SAD"
+trueA = true
+
+[node name="question61" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "A PALAVRA 'STAN' É UTILIZADA PARA DESCREVER:"
+opcaoA = "UM FÃ OBCECADO"
+opcaoB = "UM LOUCO DESESPERADO"
+opcaoC = "UMA PESSOA MORRENDO DE RIR"
+opcaoD = "UM LADRÃO APRESSADO"
+trueA = true
+
+[node name="question62" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "QUE PALAVRA É UTILIZADA PARA EXPRESSAR ALGO INSANO/ARREBATADOR CAPAZ DE FAZER UMA PERUCA VOAR?"
+opcaoA = "WIG!"
+opcaoB = "WAU!"
+opcaoC = "CRAZY!"
+opcaoD = "SHOCK!"
+trueA = true
+
+[node name="question63" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "\"WHAT'S THE TEA?\" É UMA EXPRESSÃO QUE PODE SER TRADUZIDA COMO:"
+opcaoA = "QUAL É A BOA?"
+opcaoB = "QUAL É A COR?"
+opcaoC = "QUAL É A MÚSICA DO MOMENTO?"
+opcaoD = "QUAL É A FOFOCA?"
+trueD = true
+
+[node name="question64" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'COUPLE GOALS' SIGNIFICA: "
+opcaoA = "META DE VIDA"
+opcaoB = "META DE CASAL"
+opcaoC = "META DE CASA"
+opcaoD = "META DE CABELO"
+trueB = true
+
+[node name="question65" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "GÍRIA UTILIZADA PARA DESCREVER \"OSTENTAÇÃO\":"
+opcaoA = "FLEXING"
+opcaoB = "SHOWING ENOUGH"
+opcaoC = "WOKE"
+opcaoD = "SUS"
+trueA = true
+
+[node name="question66" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "\"COLLECTING RECEIPTS\" É O MESMO QUE: "
+opcaoA = "\"COLHENDO PROVAS PARA O EXAME\""
+opcaoB = "\"TIRANDO PRINTS PARA MOSTRAR QUE ESTOU CERTA\""
+opcaoC = "\"RECOLHENDO RECEITAS DE REMÉDIOS\""
+opcaoD = "\"RECOLHENDO PROVAS DO CRIME\""
+trueB = true
+
+[node name="question67" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "\"LEFT ON READ\" SIGNIFICA:"
+opcaoA = "PÔR A LEITURA EM DIA"
+opcaoB = "VISUALIZAR A MENSAGEM"
+opcaoC = "VISUALIZAR E NÃO RESPONDER"
+opcaoD = "PULAR O STORY"
+trueC = true
+
+[node name="question68" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'DUDE' É UMA EXPRESSÃO QUE PODE SER TRADUZIDA COMO:"
+opcaoA = "CARA/MANO"
+opcaoB = "ENXIRIDO"
+opcaoC = "DOENTE"
+opcaoD = "ENFURECIDO"
+trueA = true
+
+[node name="question69" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'BEIJOS E ABRAÇOS' É UTILIZADA NA SEGUINTE SIGLA INGLESA:"
+opcaoA = "LOL"
+opcaoB = "PPL"
+opcaoC = "YOLO"
+opcaoD = "XOXO"
+trueD = true
+
+[node name="question70" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "EXPRESSÃO QUE REPRESENTA ALGO MUITO DIVERTIDO"
+opcaoA = "COOL"
+opcaoB = "EXCEPTIONAL"
+opcaoC = "OFF THE HOOK"
+opcaoD = "AWESOME"
+trueC = true
+
+[node name="question71" type="Node" parent="."]
+script = ExtResource( 1 )
+pergunta = "'BENT OUT OF SHAPE' SIGNIFICA: "
+opcaoA = "CHATEADO"
+opcaoB = "ARRASADO"
+opcaoC = "PULANDO DE ALEGRIA"
+opcaoD = "IMPRESSIONADO"
+trueA = true
